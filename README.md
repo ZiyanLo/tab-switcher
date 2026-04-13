@@ -70,4 +70,3 @@ Select your tab bar layout — the shortcut mapping updates immediately.
 ## 环境要求 Requirements
 
 - Chrome 109+（Manifest V3）
-- macOS（默认快捷键使用 `Option` 键 / default shortcuts use the `Option` key）
