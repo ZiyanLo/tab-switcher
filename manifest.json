@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Switcher",
+  "version": "3.2",
+  "description": "用 Option+方向键快速切换 Chrome 标签页，支持水平/垂直标签栏模式及历史回退",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": ["tabs", "storage"],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "cmd-up": {
+      "suggested_key": { "mac": "Alt+Up" },
+      "description": "水平：历史回退 / 垂直：切换上方"
+    },
+    "cmd-down": {
+      "suggested_key": { "mac": "Alt+Down" },
+      "description": "水平：撤销回退 / 垂直：切换下方"
+    },
+    "cmd-left": {
+      "suggested_key": { "mac": "Alt+Left" },
+      "description": "水平：切换左侧 / 垂直：历史回退"
+    },
+    "cmd-right": {
+      "suggested_key": { "mac": "Alt+Right" },
+      "description": "水平：切换右侧 / 垂直：撤销回退"
+    }
+  }
+}
